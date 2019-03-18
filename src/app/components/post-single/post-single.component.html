@@ -1,0 +1,7 @@
+<div [ngClass]="setClasses()">
+  <!---- <input (change)="onToggle(post)" type="checkbox" /> -->
+  <div class="header">{{ post.title }}</div>
+  <img (click)="onRender(post)" src="{{ post.thumbnailUrl }}" />
+  <!---- {{ post.thumbnailUrl }} -->
+  <button (click)="onDelete(post)" class="del"></button>
+</div>
